@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+.title-text {
+  font-size: 2rem;
+  font-style: normal;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  background-color: white;
+  height: 5.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  justify-content: space-between;
+}
+header .header-logo {
+  background-image: url(../img/headerLogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+header .subscribe-button {
+  margin-top: 1.6rem;
+}
+
+.subscribe-button {
+  width: 10rem;
+  height: 2.3rem;
+  background-color: #f69321;
+  border: none;
+  display: block;
+  font-size: 1rem;
+  color: white;
+}
+
+.subscribe-button:hover {
+  cursor: pointer;
+  background-color: #d8801d;
+}
+
+.subscribe-button:focus {
+  outline: none;
+}
+
+.mountain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../img/mountainBackgroud.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mountain .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background: rgba(204, 204, 204, 0.6);
+  height: 11rem;
+  width: 42rem;
+}
+
+.enticement {
+  display: flex;
+  height: 38rem;
+}
+.enticement .enticement-text {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  justify-content: center;
+  padding-left: 6.25rem;
+  padding-right: 10rem;
+}
+.enticement .enticement-text .enticement-header {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.enticement .enticement-text .enticement-article {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #8c8c8c;
+}
+.enticement .enticement-text .arrows {
+  align-self: flex-end;
+  position: absolute;
+  margin-top: 8.75rem;
+  width: 3.5rem;
+}
+.enticement .enticement-text .arrows:hover {
+  cursor: pointer;
+}
+.enticement .enticement-image {
+  width: 50%;
+  background-image: url(../img/bus.png);
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe {
+  height: 46.95rem;
+  padding-top: 2.3rem;
+  padding-left: 1.875rem;
+  background-image: url(../img/subBackgroud.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.subscribe .minimalists {
+  height: 3.5;
+  margin-bottom: 1.625rem;
+}
+.subscribe .sub-header {
+  font-size: 1.25rem;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 3.76rem;
+}
+.subscribe .sub-text {
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+.subscribe .sub-email {
+  display: flex;
+}
+.subscribe .sub-email .email-input {
+  background: transparent;
+  border: 2px solid white;
+  height: 2.5rem;
+  width: 18.25rem;
+  padding-left: 0.75rem;
+  color: white;
+  margin-right: 1.875rem;
+}
+.subscribe .sub-email .email-input::placeholder {
+  color: white;
+  font-size: 0.8rem;
+}
+.subscribe .sub-email .email-input:focus {
+  outline: none;
+}
+.subscribe .sub-email .subscribe-button {
+  height: calc(2.5rem + 4px);
+}
+.subscribe .sub-email .subscribe-button:focus {
+  outline: none;
+}
+
+.service-info {
+  min-height: 54.74rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.service-info .article-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6.3rem;
+  padding-left: 13.5rem;
+  padding-right: 13.5rem;
+  text-align: center;
+}
+.service-info .article-info .service-header {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 2.3rem;
+}
+.service-info .article-info .service-sub-header {
+  font-size: 1.875rem;
+  padding-bottom: 2.3rem;
+}
+.service-info .article-info .service-text {
+  font-size: 1.5rem;
+}
+.service-info .icons-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  flex: 1;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+.service-info .icons-info .info-section-one {
+  width: 25%;
+}
+.service-info .icons-info .info-section-one .icon-one {
+  height: 12.43rem;
+  width: 11.75rem;
+}
+
+.down-section {
+  height: 100vh;
+  background-color: #efefef;
+  background-image: url(../img/footerBack.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 50% 4rem 2rem;
+}
+.down-section .down-h {
+  font-size: 1.875rem;
+}
+.down-section .m-d {
+  margin-bottom: 3rem;
+}
+.down-section .down-t {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+.down-section .form-in {
+  width: 92%;
+  margin-bottom: 1rem;
+  height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 2px black solid;
+}
+.down-section .form-in:focus {
+  outline: none;
+}
+.down-section .long-in {
+  height: 12rem;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .enticement .enticement-image {
+    display: none;
+  }
+  .enticement .enticement-text {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .subscribe .sub-email {
+    flex-direction: column;
+  }
+  .subscribe .sub-email .email-input {
+    margin-bottom: 1rem;
+  }
+
+  .service-info {
+    padding: 0;
+  }
+  .service-info .article-info {
+    padding: 2rem;
+  }
+  .service-info .icons-info {
+    margin-top: 0;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-info .icons-info .info-section-one {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .down-section {
+    padding: 2rem;
+  }
+}

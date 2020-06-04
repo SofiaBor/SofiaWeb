@@ -1,0 +1,294 @@
+$subscribeButtonColour: #f69321;
+$logosize: 3.5rem;
+$headerSideBorder: 1.5rem;
+$buttonWidth: 10rem;
+$buttonHeight: 2.3rem;
+$enticementHeight: 38rem;
+
+$mountainBlockSize: 44rem;
+* {
+   padding: 0;
+   margin: 0; 
+}
+body{
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+    text-rendering: optimizeLegibility;
+}
+.title-text{
+    font-size: 2rem;
+    font-style: normal;
+    color: white;
+}
+header {
+    display: flex;
+    flex-flow: row;
+    background-color: white;
+    height: 5.5rem;
+    padding-left: $headerSideBorder;
+    padding-right: $headerSideBorder;
+    justify-content: space-between;
+    .header-logo{
+        background-image: url(../img/headerLogo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 1rem;
+        width: $logosize;
+        height: $logosize;
+    }
+    .subscribe-button{
+        margin-top: 1.6rem;
+    }
+    
+}
+.subscribe-button{
+    width: $buttonWidth;
+    height: $buttonHeight;
+    background-color: $subscribeButtonColour;
+    border: none;
+    display: block;
+    font-size: 1rem;
+    color: white;
+    
+    
+}
+.subscribe-button:hover{
+    cursor: pointer;
+    background-color: #d8801d;
+}
+.subscribe-button:focus{
+    outline: none;
+}
+.mountain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //min-height: 100vh;
+    height: 100vh;
+    background-image: url(../img/mountainBackgroud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        background: rgb(204, 204, 204, 0.6);
+        height: 11rem;
+        width: 42rem;
+    }
+}
+.enticement{
+    display: flex;
+    height: $enticementHeight;
+    .enticement-text{
+        width: 50%;
+        display: flex;
+        flex-flow: column;
+        flex:1;
+        justify-content: center;
+        padding-left: 6.25rem;
+        padding-right: 10rem;
+        .enticement-header{
+            font-size: 1.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .enticement-article{
+            font-size: 1rem;
+            font-weight: 400;
+            color: #8c8c8c;
+        }
+        .arrows{
+            align-self: flex-end;
+            position: absolute;
+            margin-top: 8.75rem;
+            width: 3.5rem;
+        }
+        .arrows:hover{
+            cursor: pointer;
+        }
+    }
+    .enticement-image{
+        width: 50%;
+        background-image: url(../img/bus.png);
+        opacity: 0.8;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.subscribe{
+    height: 46.95rem;
+    padding-top: $buttonHeight;
+    padding-left: 1.875rem;
+    background-image: url(../img/subBackgroud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    .minimalists{
+        height: 3.5;
+        margin-bottom: 1.625rem;
+        
+    }
+    .sub-header{
+        font-size: 1.25rem;
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 3.76rem;
+    }
+    .sub-text{
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .sub-email{
+        .email-input{
+            background: transparent;
+            border: 2px solid white;
+            height: 2.5rem;
+            width: 18.25rem;
+            padding-left: 0.75rem;
+            color: white;
+            margin-right: 1.875rem;
+        }
+        .email-input::placeholder{
+            color: white;
+            font-size: 0.8rem;
+        }
+        display: flex;
+        .email-input:focus{
+            outline: none;
+            
+        }
+        .subscribe-button{
+            height: calc(2.5rem + 4px);
+        }
+        .subscribe-button:focus{
+            outline: none;
+        }
+    }
+}
+
+.service-info{
+    min-height: 54.74rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    .article-info{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 6.3rem;
+        padding-left: 13.5rem;
+        padding-right: 13.5rem;
+        text-align: center;
+        .service-header{
+            font-size: 3rem;
+            font-weight: 600;
+            padding-bottom: 2.3rem;
+        }
+        .service-sub-header{
+            font-size: 1.875rem;
+            padding-bottom: 2.3rem;
+        }
+        .service-text{
+            font-size: 1.5rem;
+        }
+    }
+    .icons-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        flex: 1;
+        margin-top: 7rem;
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+        .info-section-one{
+            width: 25%;
+            .icon-one{
+                height: 12.43rem;
+                width: 11.75rem;
+            }
+        }       
+    }
+}
+
+.down-section{
+    height: 100vh;
+    background-color: #efefef;
+    background-image: url(../img/footerBack.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 50% 4rem 2rem;
+    .down-h{
+        font-size: 1.875rem;
+    }
+    .m-d{
+        margin-bottom: 3rem;
+    }
+    .down-t{
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+    .form-in{
+        width: 92%;
+        margin-bottom: 1rem;
+        height: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border: 2px black solid;
+    }
+    .form-in:focus{
+        outline: none;
+    }
+    .long-in{
+        height: 12rem;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .enticement{
+        .enticement-image{
+            display: none;
+        }
+        .enticement-text{
+            width: 100%;
+            padding: 2rem;
+        
+        }
+    }
+    .subscribe{
+        .sub-email{
+            flex-direction: column;
+            .email-input{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .service-info{
+        padding: 0;
+        .article-info{
+            padding: 2rem;
+        }
+        .icons-info{
+            margin-top: 0;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            .info-section-one{
+                width: 100%;
+                margin-top: 2rem;
+            }
+        }
+    }
+    .down-section{
+        padding: 2rem;
+    }
+    
+  }

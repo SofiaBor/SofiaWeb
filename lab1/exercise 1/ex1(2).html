@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <title>Semantics test</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <nav id="menubar">
+                <div class="logo">
+                    <a  href="ex1(2).html"> Navigation Bar
+                        <!-- <img src="/images/web.png" alt=""> -->
+                    </a>
+                </div>
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#bottom">Contacts</a></li>
+                </ul>
+            </nav>
+        <p><a name="home"></a></p>
+        <header class="headplace">
+            <h1>HEADER</h1>
+        </header>
+       
+        <h2>Output</h2>
+        <form oninput="result.value=(cm.value/2.54).toFixed(2)">
+            <p>Введите длину в сантиметрах: 
+            <input type="number" name="cm" autofocus /></p>
+            <p>Длина в дюймах: <output name="result">0</output></p>
+        </form>
+        <hr>
+        <h2>Summary</h2>
+        <details>
+        <summary>Інформація</summary>
+            <p>Тут має бути інформація</p>
+        </details>
+        <hr>
+        <h2>Template</h2>
+        <div id="template">
+            <section>
+                <button onclick="showContent()">Show content</button>
+                <p>Результат з'явиться внизу сторінки</p>
+            </section>
+            
+            <template>
+                <div class="myClass">I like: </div>
+            </template>
+        </div>
+        <script type="text/javascript" src="/js/script2.js"></script>
+        <hr>
+        <h2>Time</h2>
+        <p>Перша пара розпочинається в <time>9:00</time></p>
+        <hr>
+        <h2>Wbr</h2>
+        <p>Найдовше слово в хімії</p>
+        <p class="word">метоксихлор<wbr>диетиламіно<wbr>метил<wbr>бутил<wbr>аміно<wbr>акридин</p>
+
+        <hr>
+        <h2>Footer</h2>
+        <footer>
+            <div class="contacts">
+                <p>E-mail : bodia007killer@gmail.com</p>
+                <p>Telegram : @bodia007q</p>
+                <p>Instagram : @bohdanmolchanov</p>
+            </div>
+            <div id="endofsite">
+                <p>©Molchanov Bohdan (2019)</p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="/js/script.js"></script>
+    </body>
+</html>

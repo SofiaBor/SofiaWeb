@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+    <head>
+        <title>Semantics test</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <nav id="menubar">
+                <div class="logo">
+                    <a  href="ex1.html"> Navigation Bar
+                        <!-- <img src="/images/web.png" alt=""> -->
+                    </a>
+                </div>
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#bottom">Contacts</a></li>
+                </ul>
+            </nav>
+        <p><a name="home"></a></p>
+        <header class="headplace">
+            <h1>HEADER</h1>
+        </header>
+        <div id="sidetext">
+            <article>
+                <h2>Article</h2>
+                <p> Тут мав би бути якийсь текст/стаття</p>
+            </article>
+            <aside>
+                <h2>Aside</h2>
+                <p>Цей текст має знаходитись десь в сторонці</p>
+            </aside>
+        </div>
+        <hr/>
+        <h2>Audio</h2>
+        <audio controls preload="auto">
+            <source src="audio/imagine-dragons-roots.mp3"type="audio/mp3"/>
+        </audio>
+        <hr/>
+        <h2>BDI</h2>
+        <p>
+            <bdi>مرحبا</bdi> — привіт
+        </p> 
+        <hr/>
+        <h2>Canvas</h2>
+        <canvas id="canvas" width="500" height="80" 
+            style="border:1px solid #d3d3d3">
+        </canvas>
+        <hr/>
+        <h2>Datalist</h2>
+        <p><input list="text">
+        <datalist id="text">
+            <option value="Text1">
+            <option value="Text2">
+            <option value="Text3">
+        </datalist>
+        </p>
+        <hr>
+        <h2>Details</h2>
+        <details>Text</details>
+        <hr>
+        <h2>Dialog</h2>
+        <dialog id="favDialog">
+            <form method="dialog" id="dialogform">
+                <section>
+                    <p><label for="favAnimal">Улюблена тварина:</label>
+                        <select id="favAnimal">
+                            <option></option>
+                            <option>Котик</option>
+                            <option>Песик</option>
+                            <option>Хом'ячок</option>
+                        </select>
+                    </p>
+                </section>
+                <section>
+                    <button id="cancel" type="reset">Назад</button>
+                    <button type="submit">Підтвердити</button>
+                </section>
+            </form>
+        </dialog>   
+        <button id="updateDetails">Вибрати тваринку</button>
+        <hr>
+        <h2>Embed</h2>
+        <embed src="images/Analogue-clock.swf" width="200" 
+           type="application/x-shockwave-flash"
+           pluginspage="http://www.macromedia.com/go/getflashplayer"> 
+        <hr>
+        <h2>Figure + Figcaption</h2>
+        <div id="fig">
+            <figure>
+                <img src="images/Metallica-logo.png" alt="Metallica Logotype">
+            </figure>
+            <figcaption>
+                <p>Metallica Logotype</p>
+            </figcaption>
+        </div>
+        <hr>
+        <h2>Main</h2>
+        <main>
+            <p>
+                Насправді вся ця сторінка важлива з точки зору завдання, тому залишу
+                тег main як просту його складову, не виділяючи щось найважливіше,
+                лише скажу, що main - це семантичний тег.
+            </p>
+        </main>
+        <hr>
+        <h2>Menuitem</h2>
+        <p>MenuItem is not working :( </p>
+        <hr>
+        <h2>Meter</h2>
+        <meter value="61" max="100" low="10" high="60"/>
+        <hr>
+        <h2>Outer</h2>
+        <form oninput="result.value=(cm.value/2.54).toFixed(2)">
+            <p>Введите длину в сантиметрах: 
+            <input type="number" name="cm" autofocus /></p>
+            <p>Длина в дюймах: <output name="result">0</output></p>
+        </form>
+        <hr>
+        <h2>Footer</h2>
+        <footer>
+            <div class="contacts">
+                <p>E-mail : bodia007killer@gmail.com</p>
+                <p>Telegram : @bodia007q</p>
+                <p>Instagram : @bohdanmolchanov</p>
+            </div>
+            <div id="endofsite">
+                <p>©Molchanov Bohdan (2019)</p>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

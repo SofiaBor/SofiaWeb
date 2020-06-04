@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin:0;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    text-align: left;
+}
+#menubar{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row;
+	position: sticky;
+    overflow: hidden;
+	background-color: #ffc64c;
+	border-bottom: 2px orangered solid;
+	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+}
+ul.navbar{
+	display: flex;
+	list-style-type: none;
+	top:0;
+	margin: 0;
+    padding: 0;
+    background-color: #f2e082; 
+}
+li{
+	border-right: 1px solid orangered;
+}
+#menubar a{
+	display: block;
+	color: black;
+	background-color: #ff7a49;
+	text-align: center;
+	padding: 20px 30px;
+	text-decoration: none;
+}
+li a:hover{
+	background-color: orange;
+}
+#menubar a:hover{
+	background-color: #ffe100;
+}
+.active{
+	background-color: red;
+}
+.headplace{
+	background-color: whitesmoke;
+	height: 15.65rem;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+}
+
+.headplace h1{
+	margin-bottom: 1rem;
+	text-align: center;
+	font-size: 2.5rem;
+}
+.headplace h2{
+	text-align: center;
+    font-size: 2rem;
+    color: black;
+}
+#sidetext{
+    display: flex;
+}
+article{
+    flex:1;
+    border-right: 1px gray solid;
+}
+aside{
+    flex: 1;
+    text-align: right;
+}
+h2{
+    font-size: 1.3rem;
+    color: coral;
+    margin-bottom: 1rem;
+}
+hr{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+#fig{
+    display: flex;
+}
+#fig figure{
+    height: 100px;
+    flex:1;
+    text-align: center;
+    margin: auto;
+}
+#fig figure img{
+    height: 80%;
+}
+#fig figcaption{
+    flex: 1;
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+}
+table {
+	background: #000;
+}
+table td {
+	background: #fff;
+}
+.myClass {
+	color: white;
+	background-color: DodgerBlue;
+	text-align: center;
+}
+
+#template{
+	display: flex;
+}
+#template section, #template template{
+	flex:1;
+}
+.word{
+	font-size: 4rem;
+}
+
+
+footer{
+	background-color: whitesmoke;
+	display: flex;
+}
+footer .contacts{
+	flex: 1;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	line-height: 2rem;
+	max-width: 50%;
+	font-size: 1.3rem; 
+	
+}
+
+footer #endofsite{
+	flex:1;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 1.5rem;
+}
